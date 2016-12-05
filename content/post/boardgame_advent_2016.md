@@ -1,6 +1,6 @@
 +++
 title = "重ゲーのススメ"
-draft = true
+draft = false
 date = "2016-12-05T14:14:54+09:00"
 thumbnail = "images/game/dg_.jpg"
 
