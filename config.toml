@@ -3,6 +3,7 @@ languageCode = "ja-JP"
 baseurl = "http://vintersnow.github.io/"
 theme = "hugo_theme_robust"
 
+googleAnalytics = "UA-88436028-1"
 disqusShortname = "http-vintersnow-github-io"
 
 [params]
