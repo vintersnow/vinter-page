@@ -1,0 +1,7 @@
+title = "vinter's page"
+languageCode = "ja-JP"
+baseurl = "http://vintersnow.github.io/"
+theme = "hugo_theme_robust"
+
+[params]
+  dateformat = "Jan 2, 2006" # Optional
