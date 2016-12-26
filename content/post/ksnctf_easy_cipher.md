@@ -11,3 +11,6 @@ tags = ['IT', 'CTF', 'ksnctf']
 
 {{< gist vintersnow 8d71380586d85326ef024302b49c80fd >}}
 
+# point
+
+**51** (1+50)
