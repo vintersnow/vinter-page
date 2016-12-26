@@ -1,10 +1,14 @@
 title = "vinter's page"
 languageCode = "ja-JP"
 baseurl = "http://vintersnow.github.io/"
-theme = "hugo_theme_robust"
+# archetypes error occured
+# theme = "hugo_theme_robust"
 
 googleAnalytics = "UA-88436028-1"
 disqusShortname = "http-vintersnow-github-io"
 
 [params]
   dateformat = "Jan 2, 2006" # Optional
+  googlefonts = "http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic"
+  fontfamily = "Avenir , 'Open Sans' , 'Helvetica Neue' , Helvetica , Arial , Verdana , Roboto , '游ゴシック' , 'Yu Gothic' , '游ゴシック体' , 'YuGothic' , 'ヒラギノ角ゴ Pro W3' , 'Hiragino Kaku Gothic Pro' , 'Meiryo UI' , 'メイリオ' , Meiryo , 'ＭＳ Ｐゴシック' , 'MS PGothic' , sans-serif"
+

@@ -2,7 +2,6 @@ box: debian
 build:
   steps:
     - arjen/hugo-build:
-        version: "HEAD"
         theme: hugo_theme_robust
 
 # deploy:
