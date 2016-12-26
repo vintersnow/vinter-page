@@ -3,12 +3,16 @@ build:
   steps:
     - arjen/hugo-build:
         theme: hugo_theme_robust
+    - script:
+        name: ls stuff
+        code: |
+          ls -haltr /pipeline/source/public
 
-# deploy:
-#   steps:
-#     - install-packages:
-#         packages: git ssh-client
-#     - lukevivier/gh-pages@0.2.1:
-#         token: $GIT_TOKEN
-#         repo: vintersnow/vintersnow.github.io
-#         basedir: public
+deploy:
+  steps:
+    - install-packages:
+        packages: git ssh-client
+    - lukevivier/gh-pages@0.2.1:
+        token: $GIT_TOKEN
+        repo: vintersnow/vintersnow.github.io
+        basedir: public
