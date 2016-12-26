@@ -16,3 +16,9 @@ deploy:
         token: $GIT_TOKEN
         repo: vintersnow/vintersnow.github.io
         basedir: public
+  after-steps:
+      - wantedly/pretty-slack-notify:
+          webhook_url: $SLACK_URL
+          channel: github-page
+          username: wercker
+
