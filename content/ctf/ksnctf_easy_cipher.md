@@ -1,6 +1,6 @@
 +++
 date = "2016-12-27T00:14:24+09:00"
-title = "ksnctf: easy cipher"
+title = "ksnctf: #2 easy cipher"
 draft = false
 thumbnail = "images/geek/ctf.jpg"
 

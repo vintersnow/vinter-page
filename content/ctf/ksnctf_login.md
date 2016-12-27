@@ -1,7 +1,7 @@
 +++
 draft = false
 date = "2016-12-27T10:45:13+09:00"
-title = "ksnctf_login"
+title = "ksnctf: #6 login"
 tags = ["IT","CTF"]
 thumbnail = "images/geek/ctf.jpg"
 
