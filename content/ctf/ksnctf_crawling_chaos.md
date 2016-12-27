@@ -12,6 +12,8 @@ tags = ['IT', 'CTF', 'ksnctf']
 
 > http://ksnctf.sweetduet.info/q/3/unya.html
 
+# 解法
+
 開くとformが一つだけ、最初はsqlインジェクションかと思ったけど、htmlを見るとjsスクリプトだった。
 
 ```js
@@ -48,11 +50,11 @@ ReferenceError: $ is not defined
 var p=Array(70,152,195,284,475,612,791,896,810,850,737,1332,1469,1120,1470,832,1785,2196,1520,1480,1449);
 ```
 
-# decode
+## decode
 
 <script src="https://gist.github.com/vintersnow/8742430bab271a052b6c19325e14777b.js"></script>
 
-# Flag
+# flag
 
 ```
 FLAG_fqpZUCoqPb4izPJE
