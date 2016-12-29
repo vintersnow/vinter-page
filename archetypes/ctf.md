@@ -11,6 +11,4 @@ tags = ['IT', 'CTF']
 
 # 解法
 
-# flag
-
 # point
