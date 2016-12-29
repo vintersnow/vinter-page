@@ -1,7 +1,7 @@
 +++
 tags = ["IT","CTF"]
 date = "2016-12-29T18:38:01+09:00"
-title = "ksnctf_john"
+title = "ksnctf: #14 john"
 thumbnail = "images/geek/ctf.jpg"
 draft = false
 
