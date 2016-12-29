@@ -31,6 +31,9 @@ m = c^d (mod n)
 
 <script src="https://gist.github.com/vintersnow/6dd6a38984554365149c1ffa962ea8a1.js"></script>
 
+modのインバースや巨大数のべき乗の計算はうまいことしないと計算量が増大するのでなるべくライブラリを使うようにした。
+pycryptoのnumberは便利なんだけど少し物足りない。numpyやsympyを使ったほうがいいのかな？
+
 # point
 
 **831**
