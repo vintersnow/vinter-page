@@ -27,6 +27,10 @@ MPFRを使えるgmpy2というライブラリが良さそう。他にsageなど�
 
 <script src="https://gist.github.com/vintersnow/48eece5d7813dc8299d77ea7c88a5024.js"></script>
 
+自分で書くなら2分木探索をしたらいい。
+
+<script src="https://gist.github.com/vintersnow/acef02b3de272fbdb22f6339868cdd0b.js"></script>
+
 # point
 
 **881**
