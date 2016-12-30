@@ -1,8 +1,8 @@
 +++
-date = "2016-12-27T23:35:12+09:00"
-title = "ksnctf_digest_is_secure"
+date = "2016-12-30T23:35:12+09:00"
+title = "ksnctf: #9 digest is secure!"
 thumbnail = "images/geek/ctf.jpg"
-draft = true
+draft = false
 tags = ["IT","CTF"]
 
 +++
@@ -57,11 +57,29 @@ q9:secret:c627e19450db746b739f41b64097d449
 
 つまり`A1`がc627e19450db746b739f41b64097d449と分かった。
 
-あとはこれを逆ハッシュすればいいのかな？
+ここでdigest認証のレスポンスの作り方をもう一度見ると、
+
+>response = MD5( MD5(A1) ":" nonce ":" nc ":" cnonce ":" qop ":" MD5(A2) )
+
++ A1 ← 分かった
++ A2 ← 分かる
++ nonce,nc,cnonce,qop ← 相手から与えられる
+
+というわけでレスポンスが作れる！
+（http://ksnctf.sweetduet.info:10080/~q9 がアクセス可能だと気づくのにしばらく時間がかかったが...）
+
+responseの書き換えにはburpSuiteを使用する。これはproxyを立てることでhttp通信を覗き見、書き換えすることが出来るツールだ。
+セットアップの仕方は[ここらへん](http://tech.pjin.jp/blog/2016/07/15/burp-suite-1-7%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9%E3%80%80%E3%81%9D%E3%81%AE%EF%BC%92/)参考に。
+
+{{% img src="static/images/geek/test.jpg" %}}
+
+nonceなどをコピーしてレスポンスを生成して書き換えるとflagが手に入った。
+
+<script src="https://gist.github.com/vintersnow/23f1c45a295eb990bccc6ec21a19d1c8.js"></script>
 
 ## おまけ htdigest
 
-やったことないので、htdigestを試してみる。
+やったことがなかったので、htdigestを試してみる。
 
 ```
 ❯ htdigest -c htdigest_test secret vinter
@@ -80,10 +98,11 @@ MD5 ("vinter:secret:vinter") = 98ef267645a2168773d7b944345ecf47
 
 確かにhashが一致している。
 
-# flag
-
 # point
+
+**1031**
 
 # 参考
 
 + https://ja.wikipedia.org/wiki/Digest%E8%AA%8D%E8%A8%BC
++ http://tech.pjin.jp/blog/2016/07/15/burp-suite-1-7%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9%E3%80%80%E3%81%9D%E3%81%AE%EF%BC%92/
